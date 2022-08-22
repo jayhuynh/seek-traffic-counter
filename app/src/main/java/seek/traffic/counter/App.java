@@ -5,7 +5,9 @@ import java.util.AbstractMap;
 public class App {
     public static void main(String[] args) {
         Counter counter = new Counter();
-        counter.loadFile("app/src/test/resources/traffic.txt");
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        counter.loadFile("src/test/resources/traffic.txt");
+
 
         System.out.println("Total cars: " + counter.getTotal());
         System.out.println("Total cars in day: ");
